@@ -1,0 +1,58 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: ;
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    font-size: 30px;
+    color: #ffffff;
+    background: #2653d0;
+    padding: 20px 40px;
+    float: left;
+    text-align: left;
+}
+
+.self-intro {
+    font-size: 28px;
+    color: #000;
+}
+
+.ushitapu {
+    font-size: 36px;
+    color: #f00;
+}
+
+.table {
+    margin:0 auto;
+    width:50%;
+}
+
+.table th {
+    background: #cfcfcf
+}
+
+.table span {
+    color:#f00
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    font-size: 30px;
+    color: #fff;
+    background: #333;
+    padding: 20px 40px;
+}
