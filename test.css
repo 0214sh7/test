@@ -1,4 +1,4 @@
-﻿* {
+* {
     margin: 0;
     padding: 0;
 }
@@ -25,6 +25,11 @@ header {
     text-align: left;
 }
 
+p {
+    font-size: 28px;
+    color: #000;
+}
+
 .self-intro {
     font-size: 28px;
     color: #000;
@@ -46,6 +51,14 @@ header {
 
 .table span {
     color:#f00
+}
+
+.yabasite {
+    background: #ff0000;
+    width: 200px;
+    font-size: 36px;
+    color: #f00;
+    margin: 0 auto;
 }
 
 footer {
