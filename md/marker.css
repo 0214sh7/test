@@ -1,0 +1,182 @@
+﻿@charset "UTF-8";
+
+:root{
+    --base_color:#eeeeee;
+    --main_color:#1A1A97;
+    --sub_color:#4C4CFF;
+    --weak_color:#E5E5FF;
+    --text_color:#222222;
+    --weak_text_color:#999999;
+    --quote_color:#bbbbbb;
+    --table_color:#ffffff;
+    --accent_color:#F68A55;
+    --accepted_color:#39BF39;
+    --wronganswer_color:#E59900;
+    
+}
+
+body {
+    background:var(--base_color);
+    color:var(--text_color);
+}
+
+/*h1,h2,h3,h4,h5,h6{
+    color:#444444;
+}*/
+
+h1{
+    padding: .5em .75em;
+    background: var(--main_color);
+    color: #fff;
+    border-radius: 0.7em;
+
+}
+
+/*
+h1{
+    padding: .5em 0;
+    border-top: double 10px var(--sub_color);
+    border-bottom: double 10px var(--sub_color);
+    color:var(--main_color);
+}*/
+
+/*h2{
+    padding: .30em 0;
+    border-left: 15px solid var(--main_color);
+    border-bottom: 5px solid var(--main_color);
+    color:var(--text_color);
+}*/
+h2{
+    color: var(--main_color);
+    padding: 0.3em 0;
+    border-top: solid 3px var(--main_color);
+    border-bottom: solid 3px var(--main_color);
+}
+
+/*h3{
+    padding: .15em 0;
+    border-left: 7px solid var(--sub_color);
+    border-bottom: 2px dashed var(--sub_color);
+    color:var(--text_color);
+}*/
+h3 {
+    background: linear-gradient(transparent 70%, var(--sub_color) 30%);
+    display:inline;
+}
+
+h4{
+    background:var(--weak_color);
+    color:var(--text_color);
+}
+
+h5{
+    border-bottom: 2px solid var(--text_color);
+    color:var(--text_color);
+}
+
+h6{
+    color:var(--weak_text_color);
+}
+
+span.accent{
+    background: var(--accent_color);
+}
+
+span.accepted{
+    padding:0 .5em;
+    background: var(--accepted_color);
+    color:var(--table_color);
+    border-radius: 0.3em;
+}
+
+span.wronganswer{
+    padding:0 .5em;
+    background: var(--wronganswer_color);
+    color:var(--table_color);
+    border-radius: 0.3em;
+}
+
+blockquote{
+    padding-top:10px;
+    border-left: 3px solid var(--sub_color);
+    background:var(--quote_color);
+
+}
+
+blockquote:before{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    content: "\"";
+    font-family: "FontAwesome","Source Code Pro", "ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", "Meiryo", verdana, sans-serif;
+    color: var(--sub_color);
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+/*pre{
+    width:100%;
+    background:var(--text_color);
+    color:var(--main_color);
+}*/
+
+table {
+    width: 25%;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid var(--text_color);
+}
+
+table th, table td {
+    border: 1px dashed var(--text_color);
+    color: var(--text_color);
+    
+}
+
+table th {
+    background: var(--weak_color);
+    
+}
+
+ul {
+	padding:0.5em;
+	list-style-type:none;
+}
+ul li {
+	position:relative;
+	padding: 0em 0.3em 0.3em 1.3em;
+}
+ul li:before {
+	position:absolute;
+	content:'';
+	top: 0.5em;
+	left: 0.2em;
+	height:0;
+	width:0;
+	border-style: solid;
+	border-width: 6px 0 6px 9px;
+	border-color: transparent transparent transparent var(--sub_color);
+}
+
+
+
+ol{
+    counter-reset: item;
+    list-style-type: none;
+    padding-left: 0;
+}
+ol ol{
+    padding-left: 1em;
+}
+li{
+    text-indent: -1.3em;
+    padding-left: 1.3em;
+}
+li:before {
+    counter-increment: item;
+    content: counter(item)'.';
+    padding-right: .5em;
+    font-weight: bold;
+    color: var(--sub_color);
+}
